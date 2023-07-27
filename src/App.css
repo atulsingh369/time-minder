@@ -60,3 +60,13 @@
 .input-alt:focus + .input-border-alt {
   width: 100%;
 }
+
+p span:nth-child(2) {
+  font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 350px) {
+  p span:nth-child(2) {
+    font-size: 1rem;
+  }
+}
