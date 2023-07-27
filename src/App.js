@@ -3,77 +3,55 @@ import './App.css';
 function App() {
 	return (
 		<>
-			<div className="h-screen bg-gradient-to-bl from-[#ff3cac] via-[#784ba0] to-[#2b86c5] text-white">
-				<h1 className='flex justify-center text-5xl font-semibold'>Remaining Time</h1>
-				<div className="time">
-					<div className="row">
-						<p style={{ display: "flex", flexDirection: "column" }}>
-							<span id="year" style={{ display: "flex", justifyContent: "center" }}>
-								0
-							</span>
-							<span
-								style={{ fontSize: "50%", display: "flex", justifyContent: "center" }}
-							>
-								YEARS
-							</span>
+			<div className="h-screen w-screen flex flex-col justify-center items-center bg-gradient-to-bl from-[#ff3cac] via-[#784ba0] to-[#2b86c5] text-white">
+				<h1 className='text-5xl font-bold'>Remaining Time</h1>
+
+				<div className='w-1/3 text-3xl my-12 space-y-8'>
+					<div className='flex justify-evenly w-full'>
+						<p className='flex items-center space-y-3 flex-col'>
+							<span className=''>0</span>
+							<span>YEARS</span>
 						</p>
-						<p style={{ display: "flex", flexDirection: "column" }}>
-							<span id="month" style={{ display: "flex", justifyContent: "center" }}>
-								0
-							</span>
-							<span
-								style={{ fontSize: "50%", display: "flex", justifyContent: "center" }}
-							>
-								MONTHS
-							</span>
+						<p className='flex items-center space-y-3 flex-col'>
+							<span>0</span>
+							<span>MONTHS</span>
 						</p>
-						<p style={{ display: "flex", flexDirection: "column" }}>
-							<span id="day" style={{ display: "flex", justifyContent: "center" }}>
-								0
-							</span>
-							<span
-								style={{ fontSize: "50%", display: "flex", justifyContent: "center" }}
-							>
-								DAYS
-							</span>
+						<p className='flex items-center space-y-3 flex-col'>
+							<span>0</span>
+							<span>DAYS</span>
 						</p>
 					</div>
-					<div className="row">
-						<p style={{ display: "flex", flexDirection: "column" }}>
-							<span id="hrs" style={{ display: "flex", justifyContent: "center" }}>
-								0
-							</span>
-							<span
-								style={{ fontSize: "50%", display: "flex", justifyContent: "center" }}
-							>
-								HOURS
-							</span>
+
+					<div className='flex justify-evenly w-full'>
+						<p className='flex items-center space-y-3 flex-col'>
+							<span className=''>0</span>
+							<span>HOURS</span>
 						</p>
-						<p style={{ display: "flex", flexDirection: "column" }}>
-							<span id="min" style={{ display: "flex", justifyContent: "center" }}>
-								0
-							</span>
-							<span
-								style={{ fontSize: "50%", display: "flex", justifyContent: "center" }}
-							>
-								MINUTES
-							</span>
+						<p className='flex items-center space-y-3 flex-col'>
+							<span>0</span>
+							<span>MINUTES</span>
 						</p>
-						<p style={{ display: "flex", flexDirection: "column" }}>
-							<span id="sec" style={{ display: "flex", justifyContent: "center" }}>
-								0
-							</span>
-							<span
-								style={{ fontSize: "50%", display: "flex", justifyContent: "center" }}
-							>
-								SECONDS
-							</span>
+						<p className='flex items-center space-y-3 flex-col'>
+							<span>0</span>
+							<span>SECONDS</span>
 						</p>
 					</div>
 				</div>
-				<button onclick="input()" className="input">
-					Enter Date
-				</button>
+
+				<div className="form-control">
+					<label className='text-3xl flex justify-center' htmlFor='date'>Enter Date</label>
+					<input
+						id='date'
+						className="input input-alt"
+						placeholder="Enter Date"
+						required=""
+						type="date"
+					/>
+					<span className="input-border input-border-alt" />
+				</div>
+
+
+
 				<div style={{ position: "fixed", bottom: 10 }}>
 					<h1
 						style={{
